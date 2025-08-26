@@ -1,0 +1,108 @@
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body{
+    background-color: #f5fff6;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #ffffff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.nav-logo-part{
+    display:flex;
+    align-items: center;
+    padding: 25px 10px;
+}
+
+.nav-leftSide-info{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    padding-right: 10px;
+}
+.logo-theme{
+    font-size: 24.69px;
+    color: #006747;
+}
+.heart-count,.star-count{
+    background-color: #edfff1;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    padding: 10px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.copy-count{
+    background-color: #00A63E;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.heart-count,.star-count{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+}
+
+.hero-section{
+    
+    background-image: linear-gradient(to right, #013223, #006747, #013223);
+    height: 239px;
+    background-color: red;
+    text-align:center;
+    justify-content: space-around;
+    display: grid;
+}
+.logo-hero-section{
+    height: 92px;
+    width: 92px;
+    padding: 21px 914px 11px 914px;
+}
+.hero-section-theme{
+    font-size: 40px;
+    color: #ffffff;
+}
+.hero-section-label-text{
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 21px;
+}
