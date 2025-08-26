@@ -21,6 +21,11 @@ body{
     padding: 0;
 }
 
+main{
+    display: flex;
+    align-content:center;
+}
+
 nav{
     background-color: #ffffff;
     display:flex;
@@ -114,6 +119,7 @@ nav{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    cursor: pointer;
 }
 
 .icon{
@@ -178,6 +184,35 @@ nav{
 .left-main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 58px;
+    padding: 58px 30px;
     max-width: 1370px;
+}
+
+.right-main{
+    padding: 58px 30px;
+    
+}
+
+.history-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-clear{
+    padding-left: 100px;
+}
+
+.clear-button{
+    border-radius: 50px;
+    padding: 18px 28px;
+}
+
+.icon-top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pointer{
+    cursor: pointer;
 }
