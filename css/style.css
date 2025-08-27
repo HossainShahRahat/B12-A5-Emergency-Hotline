@@ -24,6 +24,7 @@ body{
 main{
     display: flex;
     align-content:center;
+    padding: 58px 30px;
 }
 
 nav{
@@ -139,7 +140,7 @@ nav{
 .logo-hero-section{
     height: 92px;
     width: 92px;
-    padding: 21px 914px 11px 914px;
+    padding: 21px 500px 11px 500px;
 }
 .hero-section-theme{
     font-size: 40px;
@@ -184,13 +185,13 @@ nav{
 .left-main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 58px 30px;
-    max-width: 1370px;
+    
+    max-width: 1350px;
 }
 
 .right-main{
-    padding: 58px 30px;
-    
+    min-width: 400px;
+    min-height: 1140px;
 }
 
 .history-card{
@@ -215,4 +216,29 @@ nav{
 
 .pointer{
     cursor: pointer;
+}
+
+.history-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.call-history{
+    background-color: #edfff1;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 2px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-information-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
