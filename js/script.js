@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     second: '2-digit',
                     hour12: true
                 });
-                const newLog = { name: serviceName, number: serviceNumber, time: timeString };
-                callHistory.push(newLog);
+                const newCallHistory = { name: serviceName, number: serviceNumber, time: timeString };
+                callHistory.push(newCallHistory);
                 renderCallHistory();
-                showNotification(`Calling ${serviceName}...`);
+                alert('Calling '+serviceName+' '+serviceNumber);
             } else {
-                showNotification('Not enough stars to make a call!', 'error');
+                alert('Not enough coins to make a call!, Minimum 20 coins required');
             }
         });
     });
@@ -59,7 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clearHistoryButton.addEventListener('click', () => {
             callHistory = []; 
             renderCallHistory(); 
-            showNotification('Call history cleared.');
+            alert('Call history cleared.');
         });
     }
 });
+
+

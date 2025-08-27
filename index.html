@@ -23,7 +23,7 @@
             </div>
             <div class="nav-leftSide-info">
                 <button class="heart-count">
-                    <strong><label for="heart-count">0</label></strong>
+                    <strong><label id="heartCountDisplay" for="heart-count">0</label></strong>
                     <img class="icon" src="assets/heart.png" alt="heart.png">
                 </button>
                 <button class="star-count">
@@ -31,7 +31,7 @@
                     <img class="icon" src="assets/coin.png" alt="coin.png">
                 </button>
                 <button class="copy-count">
-                    <strong><label for="copy-count">0 Copy</label></strong>
+                    <strong><label for="copyCountDisplay" id="copyCountDisplay">0 Copy</label></strong>
                 </button>
             </div>
         </nav>
@@ -50,22 +50,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()" ></i>
                     </div>
 
                     <strong><label class="card-header-text" for="card-header-text">National Emergency Number</label></strong>
-                    <label class="card-label-text" id="name1" for="card-label-text">National Emergency</label>
+                    <label class="card-label-text" for="card-label-text">National Emergency</label>
                     <strong><label class="card-header-text" id="number1" for="card-number-text">999</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="All">All</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(1)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(1)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -75,22 +75,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
 
                     <strong><label class="card-header-text" for="card-header-text">Police Helpline Number</label></strong>
-                    <label class="card-label-text" id="name2" for="card-label-text">Police</label>
+                    <label class="card-label-text" for="card-label-text">Police</label>
                     <strong><label class="card-header-text" id="number2" for="card-number-text">999</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Police">Police</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(2)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(2)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -100,22 +100,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
 
                     <strong><label class="card-header-text" for="card-header-text">Fire Service Number</label></strong>
-                    <label class="card-label-text" id="name3" for="card-label-text">Fire Service</label>
+                    <label class="card-label-text" for="card-label-text">Fire Service</label>
                     <strong><label class="card-header-text" id="number3" for="card-number-text">999</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Fire">Fire</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(3)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(3)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -125,22 +125,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
 
                     <strong><label class="card-header-text" for="card-header-text">Ambulance Service</label></strong>
-                    <label class="card-label-text" id="name4" for="card-label-text">Ambulance</label>
+                    <label class="card-label-text" for="card-label-text">Ambulance</label>
                     <strong><label class="card-header-text" id="number4" for="card-number-text">1994-999999</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Health">Health</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(4)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(4)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -150,22 +150,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
                     
                     <strong><label class="card-header-text" for="card-header-text">Women & Child Helpline</label></strong>
-                    <label class="card-label-text" id="name5" for="card-label-text">Women & Child Helpline</label>
+                    <label class="card-label-text" for="card-label-text">Women & Child Helpline</label>
                     <strong><label class="card-header-text" id="number5" for="card-number-text">109</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Help">Help</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(5)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(5)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -175,22 +175,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
                     
                     <strong><label class="card-header-text" for="card-header-text">Anti-Corruption Helpline</label></strong>
-                    <label class="card-label-text" id="name6" for="card-label-text">Anti-Corruption</label>
+                    <label class="card-label-text" for="card-label-text">Anti-Corruption</label>
                     <strong><label class="card-header-text" id="number6" for="card-number-text">106</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Govt">Govt.</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(6)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(6)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -200,22 +200,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
                     
                     <strong><label class="card-header-text" for="card-header-text">Electricity Helpline</label></strong>
-                    <label class="card-label-text" id="name7" for="card-label-text">Electricity Outage</label>
+                    <label class="card-label-text" for="card-label-text">Electricity Outage</label>
                     <strong><label class="card-header-text" id="number7" for="card-number-text">16216</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Electricity">Electricity</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(7)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(7)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -225,22 +225,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
                     
                     <strong><label class="card-header-text" for="card-header-text">Brac Helpline</label></strong>
-                    <label class="card-label-text" id="name8" for="card-label-text">Brac</label>
+                    <label class="card-label-text" for="card-label-text">Brac</label>
                     <strong><label class="card-header-text" id="number8" for="card-number-text">16445</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="NGO">NGO</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(8)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(8)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -250,22 +250,22 @@
                 <div class="top-card-part">
                     <div class="icon-top-card">
                         <img class="icon card-icon" src="assets/emergency.png" alt="emergency.png">
-                        <i class="fa-regular fa-heart pointer"></i>
+                        <i class="fa-regular fa-heart fa-xl pointer" onclick="heartCount()"></i>
                     </div>
                     
                     <strong><label class="card-header-text" for="card-header-text">Bangladesh Railway Helpline </label></strong>
-                    <label class="card-label-text" id="name9" for="card-label-text">Bangladesh Railway</label>
+                    <label class="card-label-text" for="card-label-text">Bangladesh Railway</label>
                     <strong><label class="card-header-text" id="number9" for="card-number-text">163</label></strong>
                 </div>
                 <button class="card-All-text">
                     <strong><label for="Travel">Travel</label></strong>
                 </button>
                 <div class="card-footer">
-                    <button class="card-footer-button1">
+                    <button class="card-footer-button1" onclick="copyCount(9)">
                         <i class="fa-regular fa-copy"></i>
                         <strong><label for="Copy">Copy</label></strong>
                     </button>
-                    <button class="card-footer-button2" onclick="alertCall(9)">
+                    <button class="card-footer-button2">
                         <i class="fa-solid fa-phone"></i>
                         <strong><label for="Call">Call</label></strong>
                     </button>
@@ -276,7 +276,7 @@
                 <div class="top-section">
                 <div class=" history-card">
                     <div class="history-title">
-                        <i class="fa-regular fa-clock"></i> <strong><label for="Call History"> Call History</label></strong>
+                        <i class="fa-regular fa-clock fa-2xl"></i> <strong><label for="Call History" style="font-size: 24px"> Call History</label></strong>
                     </div>
                     <div class="history-clear">
                         <button class="card-footer-button2 clear-button">
@@ -289,90 +289,93 @@
                 </div>
         </main>
     </section>
-    <script>
-        function alertCall(content) {
-            if(content === 1){
-                const label_name = document.getElementById('name1');
-                const label_number = document.getElementById('number1');
+    <script >
+        let copyCounter = 0;
+        let heartCounter = 0;
+        function copyCount(copy_button){
+            const copyCountDisplay = document.getElementById("copyCountDisplay");
+            copyCounter++;
+            copyCountDisplay.innerHTML = copyCounter+" Copy";
+            if(copy_button === 1){
+                const textFinder = document.getElementById("number1");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
+
             }
-            else if(content === 2){
-                const label_name = document.getElementById('name2');
-                const label_number = document.getElementById('number2');
+            else if(copy_button === 2){
+                const textFinder = document.getElementById("number2");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 3){
-                const label_name = document.getElementById('name3');
-                const label_number = document.getElementById('number3');
+            else if(copy_button === 3){
+                const textFinder = document.getElementById("number3");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 4){
-                const label_name = document.getElementById('name4');
-                const label_number = document.getElementById('number4');
+            else if(copy_button === 4){
+                const textFinder = document.getElementById("number4");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 5){
-                const label_name = document.getElementById('name5');
-                const label_number = document.getElementById('number5');
+            else if(copy_button === 5){
+                const textFinder = document.getElementById("number5");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 6){
-                const label_name = document.getElementById('name6');
-                const label_number = document.getElementById('number6');
+            else if(copy_button === 6){
+                const textFinder = document.getElementById("number6");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 7){
-                const label_name = document.getElementById('name7');
-                const label_number = document.getElementById('number7');
+            else if(copy_button === 7){
+                const textFinder = document.getElementById("number7");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 8){
-                const label_name = document.getElementById('name8');
-                const label_number = document.getElementById('number8');
+            else if(copy_button === 8){
+                const textFinder = document.getElementById("number8");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-            else if(content === 9){
-                const label_name = document.getElementById('name9');
-                const label_number = document.getElementById('number9');
+            else if(copy_button === 9){
+                const textFinder = document.getElementById("number9");
+                const textToCopy = textFinder.innerText;
 
-                const Name = label_name.textContent;
-                const Number = label_number.textContent;
+                navigator.clipboard.writeText(textToCopy);
 
-                alert("Calling "+Name+" "+Number);
+                alert("Copied the number: " + textToCopy);
             }
-    }
+        }
+
+        function heartCount(){
+            const heartCountDisplay = document.getElementById("heartCountDisplay");
+            heartCounter++;
+            heartCountDisplay.innerHTML = heartCounter;
+        }
     </script>
 </body>
 </html>
