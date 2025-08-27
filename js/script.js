@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const callHistoryContainer = document.getElementById('call-history');
     const callButtons = document.querySelectorAll('.card .card-footer-button2');
     const clearHistoryButton = document.querySelector('.history-clear .clear-button');
+    
     let callHistory = [];
     callHistoryContainer.innerHTML = ' <div class=" call-history"> <p padding-top: 20px;">No recent calls.</p> </div>';
     function renderCallHistory() {
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="call-information-container call-history">
                     <div class="details">
                         <strong><p class="name">${call_history.name}</p></strong>
-                        <p style="color:#5c5c5c; text-align:left; ">${call_history.number}</p>
+                        <p style="color:#5c5c5c; ">${call_history.number}</p>
                     </div>
                     <div class="time">
                         <p class="time">${call_history.time}</p>

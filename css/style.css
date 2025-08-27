@@ -144,16 +144,18 @@ nav{
 
 .hero-section{
     background-image: linear-gradient(to right, #013223, #006747, #013223);
-    height: 239px;
-    background-color: red;
+    height: auto;
+    width: 100%;
     text-align:center;
-    justify-content: space-around;
     display: grid;
 }
 .logo-hero-section{
     height: 92px;
     width: 92px;
-    padding: 21px 500px 11px 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0px;
+    margin: 0 auto;
 }
 .hero-section-theme{
     font-size: 40px;
@@ -204,7 +206,7 @@ nav{
 
 .right-main{
     min-width: 400px;
-    min-height: 1140px;
+    max-height: 1140px;
 }
 
 .history-card{
@@ -236,13 +238,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    font-size: 24px;
 }
 
 .call-history{
     background-color: #edfff1;
     border-radius: 8px;
     color: black;
-    text-align: center;
     font-size: 16px;
     margin: 8px 2px;
     padding: 10px 20px;

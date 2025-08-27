@@ -1,1 +1,110 @@
 /* device size code will be written here */
+@media screen and (max-width: 852px) and (min-width:393.1px) {
+    .heart-count,.star-count{
+        padding: 2px 12px;
+    }
+    .copy-count{
+        padding: 4px 10px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .logo{
+        height: 37px;
+        width: 37px;
+    }
+    .logo-theme{
+        font-size: 14.69px;
+        color: #006747;
+    }
+    .logo-hero-section{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .hero-section-theme{
+        font-size: 30px;
+    }
+    .hero-section-label-text{
+        font-size: 10px;
+    }
+    .left-main{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .card{
+        max-height: auto;
+        min-width: 290px;
+    }
+    .card-footer-button1,.card-footer-button2{
+        padding: 10px 40px;
+    }
+    .right-main{
+        min-width: 85%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .heart-count,.star-count{
+        padding: 2px 12px;
+    }
+    .copy-count{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .logo{
+        height: 37px;
+        width: 37px;
+    }
+    .logo-theme{
+        font-size: 11.69px;
+        color: #006747;
+    }
+    .logo-hero-section{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .hero-section-theme{
+        font-size: 20px;
+    }
+    .hero-section-label-text{
+        font-size: 8px;
+    }
+    .left-main{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .card{
+        max-height: auto;
+        min-width: 190px;
+    }
+    .card-footer-button1,.card-footer-button2{
+        padding: 10px 25px;
+    }
+    .right-main{
+        min-width: 65%;
+        height: auto;
+    }
+    .history-card{
+        font-size: 14px;
+    }
+    .call-history{
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+    .history-title{
+        display: flex;
+        align-items: center;
+    }
+    .clear-button{
+        border-radius: 50px;
+        padding: 6px 10px;
+    }
+}
