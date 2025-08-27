@@ -96,6 +96,17 @@ nav{
     display: flex;
     align-items: center;
 }
+.btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.btn2:hover {
+    background-color: #020307; 
+    color: #ffffff; 
+    border-color:#020307;
+    transition: 0.5s;
+}
+
 .card-footer-button1{
     background-color: #ffffff;
     border: 2px solid #d4d6d5;
@@ -107,6 +118,7 @@ nav{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    transition: 0.3s;
     cursor: pointer;
 }
 .card-footer-button2{
@@ -120,6 +132,7 @@ nav{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    transition: 0.5s;
     cursor: pointer;
 }
 
